@@ -1,10 +1,16 @@
 # Y2DRender
 基于OpenGL的简易2D渲染器
 
->OpenGL版本330
+>OpenGL Version 330，OPENGL-ES Version 200
+
 >用于之后的OPENGL-ES硬件移植工作所写的demo
+>
+>主要目的是程序化生成图形库，代替以往的存播模式，用来在车机等低带宽的硬件LED场景中渲染动画图形
 
 ![2D2](https://user-images.githubusercontent.com/41230077/163804480-aa7456e5-7612-4a23-958f-7a0ef61b2814.gif)
+
+![2D](https://user-images.githubusercontent.com/41230077/163805781-a712aaed-bfa9-47cd-8429-2f6986d33ba0.gif)
+
 
 ## Y2DShader的主要原理
 
@@ -15,7 +21,6 @@ OpenGL顶点着色器着色之后经过正交投影矩阵投影变换到二维�
 2. 绑定 Uniform 数据
 3. 根据着色程序的顶点属性传递顶点数据到 GPU
     
-值得注意的是，C 语言没有函数重载，所以会有很多名字相同后缀不同的函数版本存在。其中函数名中包含数字（1、2、3、4）表示接受这个数字个用于更改uniform变量的值，i表示32位整形，f表示32位浮点型，ub表示8位无符号byte，ui表示32位无符号整形，v表示接受相应的指针类型。
 
 ## Pass设计
 Y2DShader 的 Pass 设计比较简单，主要实现
