@@ -1,6 +1,9 @@
 # Y2DRender
 基于OpenGL的简易2D渲染器
-
+主要功能和特点：
+1. 使用plist实现粒子效果；
+2. 实现完整的pass和裁剪测试、Alpha 测试、模板测试、深度测试和混合模式的设置；
+3. 自己实现了matrix运算的类：math.cpp与math.h中。
 >OpenGL Version 330，OPENGL-ES Version 200
 
 >用于之后的OPENGL-ES硬件移植工作所写的demo
